@@ -1,6 +1,6 @@
 
 ## Cleaning Data
-data = fread('/Users/abhishekmonga/Documents/My Folder/Courseswork/Rcourse/Exploratory Data Analysis/Project 1/household_power_consumption.txt',
+data = fread('/Users/Documents/My Folder/Courseswork/Rcourse/Exploratory Data Analysis/Project 1/household_power_consumption.txt',
                   sep = ";", header= TRUE, na.strings = "?",colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
 
 dat <- data[(data$Date == "1/2/2007" | data$Date == '2/2/2007'),]  # Subsets data for the required dates
